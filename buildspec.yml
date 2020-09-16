@@ -1,10 +1,9 @@
 version: 0.2
 
-
 env:
   variables:
-    IMAGE_REPO_NAME: "admin05-gateway"
-    _PROJECT_NAME: "gateway"
+    IMAGE_REPO_NAME: admin05-gateway
+    _PROJECT_NAME: gateway
 
 phases:
   install:
