@@ -39,15 +39,15 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: admin05-order
+        - id: order
           uri: http://order:8080
           predicates:
             - Path=/orders/** 
-        - id: admin05-delivery
+        - id: delivery
           uri: http://delivery:8080
           predicates:
             - Path=/deliveries/**,/cancellations/**
-        - id: admin05-customercenter
+        - id: customercenter
           uri: http://mypage:8080
           predicates:
             - Path=/mypages/**
